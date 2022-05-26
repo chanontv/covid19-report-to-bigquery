@@ -31,7 +31,7 @@ Please follow these steps to setup the workflow:
 3. In GCP IAM, add @.iam.gserviceaccount.com with role Service Account User as a member on the root service account <Project_name>@appspot.gserviceaccount.com
 4. Create new secret GCP_PROJ_NAME with value = project ID e.g. root-sanctuary-01234
 5. Create new secret GCP_CREDENTIALS with value = base64-encoded JSON value from the content of the file in 2.
-6. Create cloud pubsub topic 
+6. Create cloud pubsub topic
 7. Test run this workflow. It should create new Cloud Function in the project.
 
 # Reference
