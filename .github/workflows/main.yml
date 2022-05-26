@@ -28,7 +28,7 @@ jobs:
         run: echo Ready for deployment
           
       - name: Setup GCloud
-        uses: google-github-actions/setup-gcloud@main
+        uses: google-github-actions/setup-gcloud@v0
         with:
           project_id: ${{ secrets.GCP_PROJ_NAME }}
           service_account_key: ${{ secrets.GCP_CREDENTIALS }}
@@ -38,7 +38,7 @@ jobs:
         uses: google-github-actions/deploy-cloud-functions@main
         with:
           # Name of the Cloud Function.
-          name: insert_data
+          name: test_deploy_data
           # Description for the Cloud Function.
           description: test-description
           # Region to deploy the function in. Defaults to us-central1, if not specified.
